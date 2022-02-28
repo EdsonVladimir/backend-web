@@ -1,0 +1,947 @@
+{
+	"info": {
+		"_postman_id": "ed205e66-8617-4c3c-ad30-586e2ee17aff",
+		"name": "vicepresidencia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "tipo_componente",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\":\"Objetivo institucional\",\n    \"descripcion\":\"Objetivo Institucional\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/tipocom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tipocom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/tipocom/1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\":\"slider\",\n    \"descripcion\":\"En este estado obtendremos el slider de un componente ACTUALIZADO DE NUEVO\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/tipocom/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tipocom",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Imagen",
+			"item": [
+				{
+					"name": "añadir imagen",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/imagen",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"imagen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "editar imagen",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/edson/Documentos/borde_superior.png"
+								},
+								{
+									"key": "nombre",
+									"value": "Header sup",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/imagenact",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"imagenact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Noticias",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n    \"titulo\":\"VICEPRESIDENTE CHOQUEHUANCA PIDE SEGUIR TRABAJANDO POR LA DEMOCRACIA Y REVALORIZAR NUESTRA CULTURA\",\n    \"descripcion\":\"VPEP/La Paz.- El Vicepresidente del Estado Plurinacional, David Choquehuanca Céspedes, participó de la Reunión Anual del Consejo de Ayllus y Markas del Qullasuyu de Chuquiagu Marka (CODEMAC), en el departamento de La Paz, oportunidad en la que la autoridad recordó la importancia de continuar la lucha por la democracia  ... ( sadsadsadsadsadsa sadsadsadsadslñakdf fkdsfjklsdajfklsadjfkljsdafkl sakldfjsadlñkfjlksadfjdsklañf sdlkñajfklsdajfklsdañjfñlksdajfklñsdaf lkjsdaklfjsdlkñafjlskdañjfkldsafjñdskljfkñlsdjfklñsdaj fsdalkfjdsklajfklsdajfklsdajfklñsdajfklñsdja lksdajfklsdajfklñsdajfklñjsdakfñljsdaklñfj sdaflkjsdaklfj sdaklñfj ñalsdjfklñsdjaflk{jdsapoifskj lksdjfklsd jflkñsdaj flksdajflkñsdajfñlksad\",\n    \"id_imagen\":\"7f3fb0a7-55ef-467b-9457-f9c3d76bb7cb\",\n     \"id_componente\":\"1fa1db21-daf5-44e5-bf69-fbf084fc90cb\",\n     \"resumen\":\"PEP/La Paz.- El Vicepresidente del Estado Plurinacional, David Choquehuanca Céspedes, participó de la Reunión Anual del Consejo de Ayllus y Markas del Qullasuyu de Chuquiagu Marka (CODEMAC), en el departamento de La Paz, oportunidad en la que la autoridad recordó la importancia de continuar la lucha por la democracia\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/noticia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"noticia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"titulo\":\"Noticia 1\",\n    \"descripcion\":\"En este estado obtendremos el slider de un componente Noticis\",\n    \"id_imagen\":\"1\",\n     \"id_componente\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/noticia/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"noticia",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PAGINAS",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\":\"Pagina 1\",\n    \"descripcion\":\"En este estado obtendremos el slider de un componente\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/pagina",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pagina"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener paginas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Editar pagina",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \n    \"nombre\":\"Pagina 1\",\n    \"descripcion\":\"En este estado obtendremos el slider de un componente Nuevoi\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/pagina/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pagina",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar pagina",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener la pagina inicial",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "menu",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\":\"Pagina 1\",\n    \"urldir\":\"[{'label':'INICIO'},{'label':'INSTITUCION'},{'label':'TRANSPARENCIA'},{'label':'COMUNICACION'},{'label':'DIRECCIONES'}]\",\n    \"descripcion\":\"menu pagina 7\",\n    \"id_componente\":\"4\",\n    \"id_pagina\":\"74fec6a1-c88c-4036-acca-e48c0c514edd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/menu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"menu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Carousel",
+			"item": []
+		},
+		{
+			"name": "Libros",
+			"item": []
+		},
+		{
+			"name": "componente",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_tipo_comp_fk\":4,\n    \"nombre\":\"Header\",\n    \"id_pagina\":\"74fec6a1-c88c-4036-acca-e48c0c514edd\",\n    \"titulo\":\"Heder\",\n    \"descripcion\":\"este es un header\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/componente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"componente"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "slider",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_imagen\":3,\n    \"id_componente\":\"19edcc4b-93a8-4880-bd3d-7d6388a181f7\",\n    \"titulo\":\"Slider\",\n    \"descripcion\":\"esta es la imagen del slider\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/slider",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"slider"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "seccion_propia",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n    \"titulo\":\"Noticia 1\",\n    \"descripcion\":\"Aqui ba el texto de la Noticia sdfdsfds sdf sdfsdf sf sdfsd sdgfhdf hfh dfhgdg sdg sdfgs gsf g gfdgsfdg fdsgsfd g\",\n    \"url_imagen\":\"4\",\n     \"id_componente\":\"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/seccion-prop",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"seccion-prop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Header",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Nuestros Sitios",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Nuestros Sitios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Postulados",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"titulo\":\"ADSIB\",\n    \"url_dir\":\"https://adsib.gob.bo\",\n    \"id_componente\":\"3d50ed29-9797-4789-80a1-df606cddf809\",\n    \"id_imagen\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/postulados",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"postulados"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Redes Sociales",
+			"item": [
+				{
+					"name": "Obtener redes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/redes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"redes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Componente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"titulo\":\"Instagram\",\n    \"url_dir\":\"https://adsib.gob.bo\",\n    \"id_componente\":\"d607aaf7-6817-4adb-903f-c1deea89c790\",\n    \"id_imagen\":\"f2f7ee8b-884a-48ea-93a6-b1a202438364\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/redes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"redes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Eventos",
+			"item": [
+				{
+					"name": "Obtener redes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/redes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"redes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Componente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"titulo\":\"Instagram\",\n    \"url_dir\":\"https://adsib.gob.bo\",\n    \"id_componente\":\"d607aaf7-6817-4adb-903f-c1deea89c790\",\n    \"id_imagen\":\"f2f7ee8b-884a-48ea-93a6-b1a202438364\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/redes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"redes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Otros enlaces",
+			"item": [
+				{
+					"name": "Obtener redes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/redes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"redes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Componente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"titulo\":\"Instagram\",\n    \"url_dir\":\"https://adsib.gob.bo\",\n    \"id_componente\":\"d607aaf7-6817-4adb-903f-c1deea89c790\",\n    \"id_imagen\":\"f2f7ee8b-884a-48ea-93a6-b1a202438364\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/redes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"redes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estado plurinacional",
+			"item": [
+				{
+					"name": "obtener componente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Crear estado",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_componente\":\"f763cf63-cee5-41ca-89ff-ef4f47ac89fe\",\n    \"titulo\":\"ÁLVARO MARCELO GARCÍA LINERA\",\n    \"descripcion\":\"Primer Vicepresidente del Estado Plurinacional de Bolivia (2010-2019).<br>Trigesimo octavo Vicepresidente de la República de Bolivia (2005-2009).<br>Vicepresidente de Evo Morales Ayma, primer Presidente del Estado Plurinacional de Bolivia.<br>(Cochabamba, 19 de octubre de 1962)<br>Desde sus primeros años de juventud, se acercó a varios clásicos del conocimiento universal, como Kant, Hegel, Gramsci, Nietzsche y, por supuesto, Marx y Lenin, lo que despertó en el una fuerte motivación intelectual y social. En 1985, genera contactos con dirigentes campesinos y mineros que formaban parte de las estructuras políticas de los sectores populares del país. Entre ellos se encontraba Felipe Quispe. Desde entonces, inicia visitas a las comunidades indígenas y centros mineros para irradiar el discurso de la sublevación indígena y obrera para la toma directa del poder. Los postulados que presentaba Álvaro García por entonces eran realmente revolucionarios, a tal punto que quien más afectada se sintió fue la vieja izquierda tradicional boliviana, que no lograba salir de su anclaje en los postulados del Nacionalismo Revolucionario y los manuales vulgarizadores del pensamiento marxista.<br>Álvaro García forma parte de la fundación del Ejército Guerrillero Tupaj Katari (EGTK), cuyo objetivo era apoyar la insurgencia indígena. El núcleo central de esta organización son las comunidades aymaras del altiplano paceño. Hasta 1992, se dedicó casi exclusivamente a la organización y aporte ideológico al EGTK, en la permanente tarea de conciliar la teoría indianista con el marxismo, generando una praxis revolucionaria - comunitaria. El 10 de abril de 1992, los servicios secretos del estado boliviano detienen a Álvaro García, a quien someten a tortura durante varios días, antes de presentarlo ante el ministerio público. Confinado junto a los principales dirigentes del EGTK a la cárcel de Chonchocoro, sin sentencia durante cinco años, Álvaro García tuvo el tiempo para leer y reflexionar profundamente la teoría marxista, llegando a la cúspide de la abstracción intelectual con su libro Forma Valor, Forma Comunidad, publicado mientras permanecía detenido. En 1997, por no haber alcanzado su juicio una sentencia, Álvaro García es liberado. El mismo año, Evo Morales es elegido diputado uninominal. Una vez en libertad, la tarea principal para García es muy clara: reorganizarse; levantar nuevamente una estructura política capaz de hacer frente al embate liberal y retornar al proyecto de toma del poder por un bloque popular.<br>Desde el año 2000, Álvaro García, junto con otros intelectuales, despliegan un conjunto de investigaciones y ensayos cuyo título común es: Movimientos Sociales. Al plantear a éstos como la fuerza creadora de la sociedad y la expresión de las descomposiciones provocadas por el colonialismo perpetuo y el neoliberalismo, se sientan las bases académicas para la explicación de todos los fenómenos que se presentarán en los siguientes años en el país. El aparato ideológico liberal como sus intelectuales se fueron hundiendo en la misma medida en que ascendían los sectores populares en el camino a la toma del poder político. En 2005, Evo Morales lo invitó a presentarse junto a él, como candidato a la Vicepresidencia, en las elecciones generales de diciembre. El 18 de diciembre se cumplió su sueño más importante, se proclamó el primer gobierno indígena en el país, además la conquista fue aplastante, Evo Morales es el primer presidente electo con más del 50% de los votos en la historia de la democracia boliviana. Se estableció también el reto más importante de la vida de Álvaro García, tiene el deber de apoyar, con su vida si fuera necesario, al primer presidente indígena de Bolivia.\",\n    \"id_imagen\":\"3c4d0426-bf1e-40b4-85de-6d7d5ab8ca83\",\n    \"link1\":\"2010-2019\",\n     \"link2\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/estado-plurinacional-post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"estado-plurinacional-post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener componnete",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Componente-generico",
+			"item": [
+				{
+					"name": "obtener mision vision",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/componente-gen",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"componente-gen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear MisionVision",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_componente\":\"f300542b-0fb5-48cb-b23f-4930d99cc640\",\n    \"titulo\":\"Objetivos Institucionales\",\n    \"titulo_aux\":\"ACCIONES DE MEDIANO PLAZO (OBJETIVOS INSTITUCIONALES)\",\n    \"descripcion\":'<div class=\"row\" style='box-sizing: inherit; display: flex; flex-wrap: wrap; margin-right: auto; margin-left: auto; margin-bottom: 20px; color: rgb(33, 37, 41); font-family: Conv_LucidaSansStd, \"Helvetica Neue\", Helvetica, Arial, sans-serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(242, 242, 242); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><div class=\"col l12\" style=\"box-sizing: border-box; position: relative; width: 1338px; padding: 0px 0.75rem; flex-basis: 0px; -webkit-box-flex: 1; flex-grow: 1; max-width: 100%; float: left; min-height: 1px; margin-left: auto; left: auto; right: auto;\"><div class=\"col l9\" style=\"box-sizing: border-box; position: relative; width: 986.625px; padding: 0px 0.75rem; flex-basis: 0px; -webkit-box-flex: 1; flex-grow: 1; max-width: 100%; float: left; min-height: 1px; margin-left: auto; left: auto; right: auto;\"><div class=\"card-panel\" style=\"box-sizing: inherit; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px; padding: 24px; margin: 0.5rem 0px 1rem; transition: box-shadow 0.25s ease 0s, -webkit-box-shadow 0.25s ease 0s; border-radius: 2px; background-color: rgb(255, 255, 255);\"><div class=\"row\" style=\"box-sizing: inherit; display: flex; flex-wrap: wrap; margin-right: -0.75rem; margin-left: -0.75rem; margin-bottom: 20px;\"><div class=\"col s12\" style=\"box-sizing: border-box; position: relative; width: 938.625px; padding: 0px 0.75rem; flex-basis: 0px; -webkit-box-flex: 1; flex-grow: 1; max-width: 100%; float: left; min-height: 1px; margin-left: auto; left: auto; right: auto;\"><h5 style=\"box-sizing: inherit; margin: 1.09333rem 0px 0.656rem; font-family: inherit; font-weight: 400; line-height: 27.06px; color: inherit; font-size: 1.64rem;\">ORIGEN</h5><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">Producida la creaci&oacute;n de la nueva Rep&uacute;blica, erigida sobre el antiguo territorio de la Real Audiencia de Charcas, el Libertador Sim&oacute;n Bol&iacute;var se encarg&oacute; de redactar el texto de la Constituci&oacute;n, que la present&oacute; a la Primera Asamblea Constituyente en 1826. En la propuesta inicial, el cargo vicepresidencial no era de elecci&oacute;n directa, sino que era presentado por el Presidente al Poder Legislativo, el que pod&iacute;a aprobar o rechazar la propuesta. Por tanto, el Vicepresidente formaba parte del Poder Ejecutivo, y en esa condici&oacute;n era responsable directo de la administraci&oacute;n del Estado, quedando los ministros bajo su direcci&oacute;n y tuici&oacute;n.</p><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">Por ello, las atribuciones del Vicepresidente de la Rep&uacute;blica, estaban &iacute;ntimamente ligadas al poder ejecutivo. Se le se&ntilde;alaba como jefe del ministerio, y en esa condici&oacute;n era responsable, con el ministro del despacho del departamento respectivo, de la administraci&oacute;n del estado, debiendo gestionar y firmar a nombre de la Rep&uacute;blica y del Presidente, todos los negocios de la administraci&oacute;n con el ministro de Estado del departamento respectivo. Para honrar al cargo de Vicepresidente, se mand&oacute; a elaborar una medalla vicepresidencial que lleva hasta hoy la efigie de Antonio Jos&eacute; de Sucre, el Gran Mariscal de Ayacucho.</p><h5 style=\"box-sizing: inherit; margin: 1.09333rem 0px 0.656rem; font-family: inherit; font-weight: 400; line-height: 27.06px; color: inherit; font-size: 1.64rem;\"><i class=\"material-icons left\" style='box-sizing: inherit; line-height: 1; font-family: \"Material Icons\"; font-weight: normal; font-style: normal; font-size: 24px; letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; overflow-wrap: normal; direction: ltr; font-feature-settings: \"liga\"; -webkit-font-smoothing: antialiased; float: left; text-rendering: optimizelegibility; margin-right: 15px;'>bookmark</i>EL PRIMER VICEPRESIDENTE DE LA REP&Uacute;BLICA</h5><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">Mucha gente considera a Sucre como el primer Vicepresidente, sin tomar en cuenta que gobern&oacute; sin ese cargo, pues sucedi&oacute; al Libertador Sim&oacute;n Bol&iacute;var por delegaci&oacute;n que le hizo &eacute;ste el 29 de diciembre de 1825, dos a&ntilde;os antes de que se promulgara la primera Constituci&oacute;n boliviana, y por ende, cuando formalmente el cargo de Vicepresidente no exist&iacute;a aun. A tiempo de renunciar, forzado por un mot&iacute;n militar, present&oacute; una terna a consideraci&oacute;n del Congreso que eligi&oacute; Vicepresidente a Jos&eacute; Miguel de Velasco, quien, ir&oacute;nicamente, nunca ejerci&oacute; esa Vicepresidencia porque fue, desde el primer d&iacute;a de su mandato, Presidente interino, ante la ausencia de Andr&eacute;s de Santa Cruz.</p><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">El primer Vicepresidente de Bolivia, que ejerci&oacute; efectivamente ese cargo, fue Jos&eacute; Ram&oacute;n de Loayza, elegido por el Presidente Pedro Blanco y por la Asamblea Convencional el 18 de diciembre de 1828, un c&oacute;nclave af&iacute;n al General Agust&iacute;n Gamarra, que hab&iacute;a ocupado el territorio nacional, de donde se retir&oacute; &uacute;nicamente luego de la firma del Tratado de Piquita, en julio de 1828. Loayza fue Presidente interino entre el 18 y el 26 de diciembre y Vicepresidente entre el 26 de diciembre de 1828 y el 1&deg; de enero de 1829, fecha en la que el Presidente Blanco fue asesinado.</p><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">La nueva Constituci&oacute;n de 1831, durante el largo per&iacute;odo de gobierno del Mariscal Andr&eacute;s de Santa Cruz, determin&oacute; la elecci&oacute;n del Vicepresidente por las juntas electorales de parroquia, por un periodo de cuatro a&ntilde;os, sin restricci&oacute;n para reelegirse o postular a Presidente en el periodo inmediatamente posterior. La Constituci&oacute;n establec&iacute;a que pod&iacute;a encargarse de cualquier ministerio, a juicio del Presidente, y se infiere que era Ministro Secretario del gabinete. El Vicepresidente segu&iacute;a como parte activa y exclusiva del Poder Ejecutivo.</p><h5 style=\"box-sizing: inherit; margin: 1.09333rem 0px 0.656rem; font-family: inherit; font-weight: 400; line-height: 27.06px; color: inherit; font-size: 1.64rem;\"><i class=\"material-icons left\" style='box-sizing: inherit; line-height: 1; font-family: \"Material Icons\"; font-weight: normal; font-style: normal; font-size: 24px; letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; overflow-wrap: normal; direction: ltr; font-feature-settings: \"liga\"; -webkit-font-smoothing: antialiased; float: left; text-rendering: optimizelegibility; margin-right: 15px;'>bookmark</i>LA ELIMINACI&Oacute;N DEL CARGO VICEPRESIDENCIAL (1839-1871)</h5><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">La Constituci&oacute;n de 1839 elimin&oacute; el cargo vicepresidencial, situaci&oacute;n que se prolong&oacute; hasta 1878, es decir que durante treinta y nueve a&ntilde;os la Constituci&oacute;n boliviana no contempl&oacute; este puesto y, en consecuencia, el pa&iacute;s no tuvo Vicepresidente durante ese lapso de tiempo. Para fines de reemplazo temporal o sucesi&oacute;n constitucional del Presidente, se determin&oacute; que el Presidente del Senado asum&iacute;a esa responsabilidad. Posteriormente el reemplazo o la sucesi&oacute;n, le correspond&iacute;a al Presidente del Consejo Nacional, que era considerado b&aacute;sicamente un organismo consultivo de control constitucional, con participaci&oacute;n de dos senadores, todos los ministros de Estado, dos magistrados de la Corte Suprema, un general, un eclesi&aacute;stico y un funcionario de Hacienda, adem&aacute;s de los ex-presidentes de la Rep&uacute;blica. El Consejo deb&iacute;a elegir un Presidente entre sus miembros. M&aacute;s tarde, se deleg&oacute; esta responsabilidad al Consejo de Ministros, que nombraba de entre su seno un Presidente.</p><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">En casos de sucesi&oacute;n, esta proced&iacute;a a trav&eacute;s del Presidente del Consejo de Estado. En esa &eacute;poca, el Consejo estaba compuesto por quince miembros, entre ellos siete diputados elegidos por la Asamblea y ciudadanos notables escogidos por la misma. En 1868 se establece nuevamente la responsabilidad del reemplazo o sucesi&oacute;n en el Consejo de Ministros, que sin embargo no mencionaba la elecci&oacute;n de un Presidente. En 1871 nuevamente la sucesi&oacute;n estaba a cargo del Presidente del Consejo de Estado, que estaba conformado por nueve diputados nombrados por dos tercios de votos de la asamblea, renovable bienal y parcialmente. Sus atribuciones eran mayores que las de consejos anteriores, entre ellas est&aacute; la de ser tribunal en juicios especiales contra mandatarios, altas autoridades y magistrados.</p><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">La Constituci&oacute;n de 1878 repone, despu&eacute;s de treinta y nueve a&ntilde;os, el cargo de Vicepresidente. En esta &eacute;poca aparece por primera vez la vinculaci&oacute;n del Vicepresidente con el Poder Legislativo. Efectivamente, el Vicepresidente era elegido por voto directo, del mismo modo que el Presidente, si bien es cierto que conformaba parte del Poder Ejecutivo, ten&iacute;a una fuerte presencia en el Poder Legislativo: &ldquo;El Vicepresidente prestar&aacute; juramento ante el Congreso despu&eacute;s del Presidente y en la misma forma que &eacute;ste. Mientras el Vicepresidente no ejerza el poder ejecutivo, desempe&ntilde;ar&aacute; el cargo de Presidente del Senado, sin perjuicio de que &eacute;ste elija su Presidente para que haga las veces en ausencia de aquel&rdquo;.</p><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">A partir de ese cambio trascendental de las funciones del Vicepresidente, se define la funci&oacute;n espec&iacute;fica de reemplazar o suceder al primer mandatario, y mientras ello no acontezca, era cabeza de la C&aacute;mara de Senadores. Todav&iacute;a no se hablaba de la Presidencia del Congreso. El Vicepresidente no pod&iacute;a ser reelegido, y no pod&iacute;a ser elegido Presidente para el periodo inmediato, si durante su periodo hubiera ejercido el poder ejecutivo para completar el anterior. La Constituci&oacute;n de 15 de febrero de 1878, parad&oacute;jicamente, fue promulgada por el Presidente de facto Gral. Hilari&oacute;n Daza, lo que impidi&oacute; que hasta el final de su mandato, no se eligiera Vicepresidente, de modo que el reemplazo presidencial continu&oacute; a cargo del Presidente del Consejo de Estado..</p><h5 style=\"box-sizing: inherit; margin: 1.09333rem 0px 0.656rem; font-family: inherit; font-weight: 400; line-height: 27.06px; color: inherit; font-size: 1.64rem;\"><i class=\"material-icons left\" style='box-sizing: inherit; line-height: 1; font-family: \"Material Icons\"; font-weight: normal; font-style: normal; font-size: 24px; letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; overflow-wrap: normal; direction: ltr; font-feature-settings: \"liga\"; -webkit-font-smoothing: antialiased; float: left; text-rendering: optimizelegibility; margin-right: 15px;'>bookmark</i>EL SISTEMA DUAL DE LA VICEPRESIDENCIA (1880-1920)</h5><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">La c&eacute;lebre Constituci&oacute;n de 1880 incorpor&oacute; la figura de dos Vicepresidentes, que eran elegidos igual que el Presidente por voto directo, pero con distintas competencias:</p><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">El Primer Vicepresidente presid&iacute;a el senado y estaba facultado para reemplazar o suceder al Presidente.</p><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">El Segundo Vicepresidente, solo ten&iacute;a la funci&oacute;n de reemplazar o suceder al Presidente, en caso de ausencia, renuncia, inhabilidad o muerte del Primer Vicepresidente.</p><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">Esta forma dual de elecci&oacute;n de los Vicepresidentes, estuvo vigente hasta 1920, habi&eacute;ndose elegido a diecinueve Vicepresidentes, pr&aacute;cticamente la mitad del total de vicepresidentes que ha tenido Bolivia. Los dos primeros Vicepresidentes dentro de esta estructura dual, fueron Aniceto Arce y Belisario Salinas, Vicepresidentes de Narciso Campero (1880-1884). En esta oportunidad, el Segundo Vicepresidente asumi&oacute; las funciones del Primer Vicepresidente, ante el exilio del Vicepresidente Aniceto Arce, ordenado por el Presidente Narciso Campero, como resultado de las numerosas cr&iacute;ticas, que provocaron problemas de gobernabilidad y entendimiento entre ambos mandatarios. Los dos &uacute;ltimos Vicepresidentes del sistema dual fueron Ismael V&aacute;zquez y Jos&eacute; S. Quinteros, Vicepresidentes de Jos&eacute; Guti&eacute;rrez Guerra, mandatario derrocado por los republicanos en 1920..</p><h5 style=\"box-sizing: inherit; margin: 1.09333rem 0px 0.656rem; font-family: inherit; font-weight: 400; line-height: 27.06px; color: inherit; font-size: 1.64rem;\"><i class=\"material-icons left\" style='box-sizing: inherit; line-height: 1; font-family: \"Material Icons\"; font-weight: normal; font-style: normal; font-size: 24px; letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; overflow-wrap: normal; direction: ltr; font-feature-settings: \"liga\"; -webkit-font-smoothing: antialiased; float: left; text-rendering: optimizelegibility; margin-right: 15px;'>bookmark</i>VICEPRESIDENTE DE LA REP&Uacute;BLICA Y PRESIDENTE DEL CONGRESO (1921-1961)</h5><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">El Congreso-Convenci&oacute;n de 1921, convocado por el gobierno del Dr. Bautista Saavedra, suprimi&oacute; la doble Vicepresidencia, manteniendo una sola, con las prerrogativas del Vicepresidente que fueron establecidas en la Constituci&oacute;n de 1880, que dicho sea de paso, se mantuvo vigente. Como consecuencia de la nueva Constituci&oacute;n, el retorno a la Vicepresidencia &uacute;nica fue efectivizada en 1926, mediante la elecci&oacute;n por voto directo de Abd&oacute;n Saavedra, durante el gobierno de Hernando Siles.</p><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">Otro cambio importante se verific&oacute; en el refer&eacute;ndum de 1931, que imped&iacute;a la reelecci&oacute;n inmediata del Vicepresidente, que pod&iacute;a verificarse despu&eacute;s de ocho a&ntilde;os de haber terminado su mandato, igual restricci&oacute;n reg&iacute;a en caso de que quiera postularse a la presidencia. Sin embargo, el cambio m&aacute;s notable se produjo en la Asamblea Constituyente de 1938, donde aparece por primera vez el car&aacute;cter del Vicepresidente como cabeza del Poder Legislativo. Esta modificaci&oacute;n establece una nueva jerarqu&iacute;a, el cargo de Presidente del Congreso, adem&aacute;s de Vicepresidente de la Rep&uacute;blica: &ldquo;El Vicepresidente de la Rep&uacute;blica en su car&aacute;cter de Presidente del Congreso Nacional y del Senado goza de las mismas inmunidades acordadas a Senadores y Diputados&rdquo; (Art. 52). Tambi&eacute;n se introdujo una restricci&oacute;n nunca consignada antes: la imposibilidad absoluta del Vicepresidente de postularse a Presidente en el periodo inmediatamente posterior. Antes esa restricci&oacute;n se daba solamente si el o los vicepresidentes, hab&iacute;an ejercido el poder ejecutivo completando el mandato del Presidente.</p><h5 style=\"box-sizing: inherit; margin: 1.09333rem 0px 0.656rem; font-family: inherit; font-weight: 400; line-height: 27.06px; color: inherit; font-size: 1.64rem;\"><i class=\"material-icons left\" style='box-sizing: inherit; line-height: 1; font-family: \"Material Icons\"; font-weight: normal; font-style: normal; font-size: 24px; letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; overflow-wrap: normal; direction: ltr; font-feature-settings: \"liga\"; -webkit-font-smoothing: antialiased; float: left; text-rendering: optimizelegibility; margin-right: 15px;'>bookmark</i>ELIMINACI&Oacute;N DE LA VICEPRESIDENCIA POR DECRETO LEY (1939-1945)</h5><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">Un hecho notable en la historia boliviana, fue la decisi&oacute;n del Gral. Carlos Quintanilla, Presidente de facto que sucedi&oacute; al Presidente Germ&aacute;n Busch, de eliminar la Vicepresidencia mediante un decreto ley. El episodio hist&oacute;rico de ese a&ntilde;o es muy interesante. La Convenci&oacute;n Nacional de 28 de mayo de 1938, convocada por el Tcnl. Germ&aacute;n Busch, legitim&oacute; su mandato y eligi&oacute; Vicepresidente de la Rep&uacute;blica a Enrique Valdivieso, quien ejerci&oacute; ese cargo hasta el 24 de abril de 1939, fecha en la que Busch se declar&oacute; Dictador, pasando a ser su gobierno de facto. Cuando se produjo la tr&aacute;gica muerte del gobernante, el ex Vicepresidente reclam&oacute; para s&iacute; el derecho de sucesi&oacute;n, pedido que fue desestimado por las FF.AA., que pusieron su Comandante en Jefe en la Presidencia.</p><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">El gobierno inconstitucional de Quintanilla, contraviniendo el estado de derecho, modific&oacute; la Constituci&oacute;n en su art&iacute;culo 90, eliminando el cargo de Vicepresidente, mediante simple decreto ley, el 4 de diciembre de 1939. La consecuencia de este exceso de poder, provoc&oacute; que la convocatoria a las elecciones de 1940 se hiciera exclusivamente para la elecci&oacute;n de Presidente, senadores y diputados, por lo que el Gral. Enrique Pe&ntilde;aranda no tuvo Vicepresidente. Hasta hoy se ha considerado incorrectamente a Waldo Belmonte como Vicepresidente de Pe&ntilde;aranda por el hecho de que lo remplaz&oacute; durante el viaje de &eacute;ste a Estados Unidos. Belmonte reemplaz&oacute; al Presidente en su condici&oacute;n de Presidente del senado, cargo que ocup&oacute; a partir del 5 de agosto de 1942 y por ello sustituy&oacute; al Presidente entre el 30 de abril y el 5 de julio de 1943. La atrabiliaria decisi&oacute;n de Quintanilla qued&oacute; sin efecto inmediatamente puesto en vigencia un nuevo periodo constitucional el 15 de abril de 1940. En 1945 se fij&oacute; el periodo de gobierno en seis a&ntilde;os. En 1947 redujo de nuevo el mandato de seis a cuatro a&ntilde;os. La Constituci&oacute;n de 1961 permiti&oacute; al Vicepresidente reelegirse o postular a la Presidencia de la Rep&uacute;blica en el periodo inmediatamente posterior.</p></div></div></div></div></div></div><div class=\"row\" style='box-sizing: inherit; display: flex; flex-wrap: wrap; margin-right: auto; margin-left: auto; margin-bottom: 20px; color: rgb(33, 37, 41); font-family: Conv_LucidaSansStd, \"Helvetica Neue\", Helvetica, Arial, sans-serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(242, 242, 242); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><div class=\"col l12\" style=\"box-sizing: border-box; position: relative; width: 1338px; padding: 0px 0.75rem; flex-basis: 0px; -webkit-box-flex: 1; flex-grow: 1; max-width: 100%; float: left; min-height: 1px; margin-left: auto; left: auto; right: auto;\"><div class=\"col l3\" style=\"box-sizing: border-box; position: relative; width: 328.875px; padding: 0px 0.75rem; flex-basis: 0px; -webkit-box-flex: 1; flex-grow: 1; max-width: 100%; float: left; min-height: 1px; margin-left: auto; left: auto; right: auto;\"><div class=\"card big animated fadeInUp\" style=\"box-sizing: inherit; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; min-width: 0px; overflow-wrap: break-word; background-clip: border-box; border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 2px; animation-name: fadeInUp; animation-duration: 1s; animation-fill-mode: both; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px; transition: box-shadow 0.25s ease 0s, -webkit-box-shadow 0.25s ease 0s; background-color: rgb(255, 255, 255); position: relative; margin: 0px 0px 1rem;\"><div class=\"card-image\" style=\"box-sizing: inherit; position: relative;\"><img src=\"http://vicepresidencia.gob.bo/static/img/history3-2.06f5fe6.png\" style=\"margin: 0 auto 0 0; text-align: left; display: block; box-sizing: inherit; border-style: none; border-radius: 2px 2px 0px 0px; inset: 0px; width: 304.375px;\"></div></div></div><div class=\"col l9\" style=\"box-sizing: border-box; position: relative; width: 986.625px; padding: 0px 0.75rem; flex-basis: 0px; -webkit-box-flex: 1; flex-grow: 1; max-width: 100%; float: left; min-height: 1px; margin-left: auto; left: auto; right: auto;\"><div class=\"card-panel\" style=\"box-sizing: inherit; box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px; padding: 24px; margin: 0.5rem 0px 1rem; transition: box-shadow 0.25s ease 0s, -webkit-box-shadow 0.25s ease 0s; border-radius: 2px; background-color: rgb(255, 255, 255);\"><div class=\"row\" style=\"box-sizing: inherit; display: flex; flex-wrap: wrap; margin-right: -0.75rem; margin-left: -0.75rem; margin-bottom: 20px;\"><div class=\"col s12\" style=\"box-sizing: border-box; position: relative; width: 938.625px; padding: 0px 0.75rem; flex-basis: 0px; -webkit-box-flex: 1; flex-grow: 1; max-width: 100%; float: left; min-height: 1px; margin-left: auto; left: auto; right: auto;\"><h5 style=\"box-sizing: inherit; margin: 1.09333rem 0px 0.656rem; font-family: inherit; font-weight: 400; line-height: 27.06px; color: inherit; font-size: 1.64rem;\"><i class=\"material-icons left\" style='box-sizing: inherit; line-height: 1; font-family: \"Material Icons\"; font-weight: normal; font-style: normal; font-size: 24px; letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; overflow-wrap: normal; direction: ltr; font-feature-settings: \"liga\"; -webkit-font-smoothing: antialiased; float: left; text-rendering: optimizelegibility; margin-right: 15px;'>bookmark</i>VICEPRESIDENTE DE LA REP&Uacute;BLICA COMO PRESIDENTE NATO DEL CONGRESO NACIONAL (1967-2009)</h5><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">Con la promulgaci&oacute;n de la Constituci&oacute;n de 1967, se reconoci&oacute; al Vicepresidente de la Rep&uacute;blica como Presidente Nato del Congreso Nacional y Presidente del Senado (Art. 53), gozando por ello de las mismas inmunidades y prerrogativas acordadas a Senadores y Diputados. Se&ntilde;alaba tambi&eacute;n que el Vicepresidente no pod&iacute;a reelegirse sino despu&eacute;s de cuatro a&ntilde;os de terminado su mandato y no ten&iacute;a derecho a postular a la presidencia hasta haber transcurrido igual periodo. La reforma de 1994 establec&iacute;a que el periodo de mandato se ampl&iacute;a a cinco a&ntilde;os e indicaba que el Vicepresidente no pod&iacute;a ser elegido ni Presidente ni Vicepresidente en el periodo siguiente al que ejerci&oacute; su mandato.</p><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">Con ese mandato fueron electos los Vicepresidentes Ren&eacute; Barrientos Ortu&ntilde;o, Luis Siles Salinas, Jaime Paz Zamora, Julio Garret Ayll&oacute;n, Luis Ossio Sanjines, V&iacute;ctor Hugo C&aacute;rdenas, Jorge Quiroga Ram&iacute;rez, Carlos Mesa Gisbert y Alvaro Garc&iacute;a Linera (en la primera gesti&oacute;n del Presidente Evo Morales). La Constituci&oacute;n Pol&iacute;tica del Estado de 2010, redactada por la primera Asamblea Constituyente con representantes electos por voto general y aprobada por mayor&iacute;a nacional en Refer&eacute;ndum popular, establece al Vicepresidente del Estado como Presidente de la Asamblea Legislativa Plurinacional. &Eacute;l mismo adquiere nuevas atribuciones como la colaboraci&oacute;n con el Presidente del Estado en la Pol&iacute;tica Internacional y la coordinaci&oacute;n entre el &Oacute;rgano Ejecutivo y los gobiernos aut&oacute;nomos (Gobiernos Departamentales, Gobiernos Municipales y Autonom&iacute;as Ind&iacute;genas).</p><h5 style=\"box-sizing: inherit; margin: 1.09333rem 0px 0.656rem; font-family: inherit; font-weight: 400; line-height: 27.06px; color: inherit; font-size: 1.64rem;\"><i class=\"material-icons left\" style='box-sizing: inherit; line-height: 1; font-family: \"Material Icons\"; font-weight: normal; font-style: normal; font-size: 24px; letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; overflow-wrap: normal; direction: ltr; font-feature-settings: \"liga\"; -webkit-font-smoothing: antialiased; float: left; text-rendering: optimizelegibility; margin-right: 15px;'>bookmark</i>EL ROL DEL VICEPRESIDENTE</h5><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">El papel de los distintos vicepresidentes ha variado considerablemente, pasando algunos de ellos desapercibidos y en tanto que otros resaltan. No siempre la relaci&oacute;n entre el Vicepresidente y el Presidente ha sido tranquila. Todo lo contrario, muchas veces la tensa relaci&oacute;n entre estos mandatarios, ha provocado incluso el destierro o el exilio, como sucedi&oacute; en el siglo pasado. Los vicepresidentes han pasado en muchos casos momentos de tensi&oacute;n y ruptura con el Presidente.</p><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">Un ejemplo, de esta dif&iacute;cil relaci&oacute;n se dio ya en 1839, cuando el Vicepresidente Jos&eacute; de Velasco derroc&oacute; a Santa Cruz y felicit&oacute; al general chileno que derrot&oacute; al Mariscal en la batalla de Yungay. En &eacute;pocas posteriores, tres ex-Vicepresidentes salieron al exilio, a causa de esos recelos y conflictos con el primer mandatario: Aniceto Arce se enfrent&oacute; duramente a Campero por el tema de la guerra del Pac&iacute;fico y fue exiliado (1881), Lucio P&eacute;rez Velasco rompi&oacute; con Pando, lider&oacute; una fracci&oacute;n disidente de los liberales y fue exiliado (1903) y Abd&oacute;n Saavedra, fue r&aacute;pidamente alejado del poder Presidente Siles (1926 y 1929). Algunos Vicepresidentes fueron totalmente anulados por los Presidentes: &Ntilde;uflo Ch&aacute;vez renunci&oacute; al cargo en protesta por la estabilizaci&oacute;n monetaria encarada por el primer gobierno de Hern&aacute;n Siles (1957). Juan Lech&iacute;n rompi&oacute; con Paz en 1963, cre&oacute; su partido, el PRIN y termin&oacute; vejado en la calle el &uacute;ltimo d&iacute;a de su mandato. En esa oportunidad Lech&iacute;n manifest&oacute;: &ldquo;La Vicepresidencia es la quinta rueda del carro&rdquo;. En 1984, Jaime Paz Zamora vivi&oacute; en constante tensi&oacute;n y fue totalmente aislado por el Presidente Hern&aacute;n Siles, hasta que fue marginado definitivamente; amargado ante este infortunio se quej&oacute;: &ldquo;el Presidente no me manda ni a comprar pan&rdquo;.</p><p class=\"basicInfo grey-text text-darken-2 text-justify\" style=\"box-sizing: inherit; margin-top: 0px; margin-bottom: 1rem; text-align: justify !important; color: rgb(97, 97, 97) !important;\">Entre tanto, otros vicepresidentes han tomado protagonismo y han ocupado cargos en el gabinete de ministros o incluso a ejercer la presidencia del pa&iacute;s. Este es el caso de Aniceto Arce, Severo Fern&aacute;ndez Alonso y Hern&aacute;n Siles Zuazo. En otros casos, los Vicepresidentes tuvieron que asumir la primera magistratura, de manera abrupta, algunas veces forzados por circunstancias pol&iacute;ticas, otras por ambici&oacute;n de poder: Luis Tejada Sorzano convalid&oacute; el golpe de estado contra Salamanca, su Presidente, y acept&oacute; la &ldquo;sucesi&oacute;n&rdquo; constitucional (1934), pero inmediatamente superado el conflicto b&eacute;lico, fue derrocado por los mismos militares. Mamerto Urriolagoitia desplaz&oacute; a Enrique Hertzog ante su debilidad pol&iacute;tica, en un t&iacute;pico asalto al poder avalado por los militares (1951). Barrientos organiz&oacute; y ejecut&oacute; un golpe de estado contra su Presidente, V&iacute;ctor Paz con el apoyo del Departamento de Estado de los EE.UU. (1964). Luis Siles Salinas nunca mantuvo una relaci&oacute;n muy cordial con Barrientos; a la muerte de &eacute;ste asumi&oacute; el mando de la Naci&oacute;n (1969), siendo derrocado al poco tiempo. Jorge Quiroga estuvo vetado de ocupar la oficina presidencial, cuando el Presidente sal&iacute;a de viaje al exterior; al final, cuando el ex general sucumbi&oacute; ante el c&aacute;ncer, Quiroga fue Presidente por sucesi&oacute;n constitucional (2001). Finalmente Carlos Mesa, sufri&oacute; el desprecio del partido del Presidente Gonzalo S&aacute;nchez de Lozada, quien finalmente tuvo que huir del pa&iacute;s, ante la masiva movilizaci&oacute;n social que lo forz&oacute; a dimitir en la heroica &ldquo;Guerra del Gas&rdquo;, dejando la Presidencia a Carlos Mesa (2003).</p></div></div></div></div></div></div>',\n    \"id_imagen\":\"a08ccbc7-68e1-4588-a19b-ab3b0ee329eb\",\n     \"url_dir\":\"\",\n     \"url_dir_uno\":\"\",\n     \"url_dir_dos\":\"\",\n     \"imagen_aux\":\"\",\n     \"imagen_aux_uno\":\"\",\n     \"imagen_aux_dos\":\"\",\n     \"imagen_aux_tres\":\"\",\n     \"imagen_aux_cuatro\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/componente-gen",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"componente-gen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener una mision vision",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/mision-vision-uno/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mision-vision-uno",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar una mision vision",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/mision-vision/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mision-vision",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener mision componente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/componente-gen-comp/767031f3-b8df-4dfb-8273-d89758571f19",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"componente-gen-comp",
+								"767031f3-b8df-4dfb-8273-d89758571f19"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
